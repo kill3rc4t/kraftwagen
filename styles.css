@@ -1,0 +1,1795 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: rgba(0,0,0,0);
+}
+
+body{
+    text-align: center;
+    font-family: "Poppins",  sans-serif;
+    --color1:  #fff;
+    --color2: #181818;   
+    
+}
+
+/* topbar */
+.top-container{
+    background-image: url('https://image.makewebeasy.net/makeweb/m_1920x0/ZeRUazFMT/contentPic/Lamborghini_Revuelto_Bangkoksupercar_33.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+    height: 100vh;
+}
+
+
+.top-container .name{
+    display: flex;
+    width:auto;
+    height:auto;
+    padding-left: 40px;
+    position:absolute;
+    
+}
+
+.top-container .name h1 a{
+    display: flex;
+    padding: 0px;
+    color:#fff;
+    font-size: 44px;
+    line-height: 2;
+    margin-top: 0px;
+    position: absolute;
+}
+
+.top-container .name a:hover{
+    scale: 1.1;
+    color: orange;
+    
+}
+
+.top-container .des{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 25px;
+    color:#fff;
+    margin-top: 400px;
+    margin-left: 100px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.top-container .contact-holder{
+    display: flex;
+    border-bottom: solid 1px white ;
+    flex-direction: row;
+    padding-right: 20px;
+    margin: 0px;
+    height: 12%;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+
+}
+
+.top-container .contact-holder .img_call{
+    height:30px;
+    width: 30px;
+    padding:0px;
+    margin: 10px;
+}
+
+.top-container .contact-holder .num{
+    padding-right: 20px;
+    align-items: center;
+    border-right: 2px solid  #fff;
+
+}
+
+.top-container .contact-holder .num1{
+    height: 20px;
+    width: 120px;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.top-container .contact-holder .num2{
+    height: 20px;
+    width: 120px;
+    align-items: center;
+    font-weight: lighter;
+    font-size: 16px;
+}
+
+.top-container .contact-holder .address{
+    display: flex;
+    justify-content: center;
+    height:30px;
+    width: 50px;
+    padding-left:20px;
+    margin: 0px;
+}
+
+.top-container .contact-holder .loc{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    justify-content: center;
+    height: 30px;
+    width: 160px;
+    margin: 0px;
+}
+
+.top-container .contact-holder .location{
+    margin: 0px;
+    padding: 0px;
+}
+
+.top-container .contact-holder h3{
+    color: #fff;
+} 
+
+.top-container .des h1:hover{
+    box-shadow: 0 0 1rem rgba(0,0,0,0.5);
+}
+
+.top-container .contact-holder p{
+    color: #fff;
+} 
+
+/* hr{
+    border: dotted #717191 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 0px;
+} */
+
+/* .logo{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    height:80px;
+    width:100px;
+} */
+
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: orange;   
+}
+
+.sidebar{
+    position: absolute;
+    top: 90px;
+    right: 0;
+    width: 60px;
+    opacity: 100%;
+    height: 55vh;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.sidebar:hover {
+    width: 250px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.sidebar ul{
+    position: relative;
+    height: 100vh;
+}
+
+.sidebar ul li{
+    list-style: none;
+}
+
+.sidebar ul li:hover{
+    background: #100c08;
+}
+
+.sidebar ul li a{
+    position: relative;
+    display: flex;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.sidebar ul li a .icon{
+    position: relative;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 100px;
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.sidebar ul li a .text{
+    position: relative;
+    height: 60px;
+    display: flex;
+    
+    align-items: end;
+    font-size: 1em;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar ul li .logo{
+    margin-bottom: 50px;
+}
+
+.sidebar ul li .logo:hover{
+    background: #100c08;
+}
+
+.sidebar ul li .logo .icon{
+    font-size: 2em;
+}
+
+.sidebar ul li .logo .text{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+
+
+.top-picks{
+    background-color: #000;
+    display: flex;
+    width:auto;
+    height:auto;
+    margin-top: 50px;
+    margin-left: 30px;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top-picks a:hover{
+    scale: 1.01;
+    color: orange;
+    background-color: #100c08;
+    border-bottom: 1px solid red;
+}
+
+.top-picks a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 80px;
+    border-bottom: 1px solid #fff;
+    width: 250px;
+    color:#fff;
+    font-size: 3rem;
+    line-height: 3;
+    margin-top: 0px;
+    position: absolute;
+    font-family: 'acme', sans-serif;
+    /* text-decoration: underline; */
+
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    background-color: #100c08;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    align-content: center;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+.grid-container .grid-item-1{
+    background-image: url('https://image.winudf.com/v2/image1/Y29tLkhEQ2FyV2FsbHBhcGVycy5MYW1ib3JnaGluaV9zY3JlZW5fM18xNTU4MzkyNjE0XzA5MQ/screen-3.jpg?fakeurl=1&type=.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid grey;
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 50vh;
+}
+
+.grid-container .grid-item-1 .overlay1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    background-color: #121213;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-container .grid-item-1:hover .overlay1{
+    height: 100%;
+}
+
+.grid-container .grid-item-1 .text-1{
+    color: white;
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container .grid-item-1:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container .grid-item-2{
+    background-image: url('https://s1.cdn.autoevolution.com/images/news/gallery/unique-aston-martin-victor-is-a-one-77-commission-with-muscle-car-looks_7.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid grey;
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 50vh;
+}
+
+.grid-container .grid-item-2 .overlay2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    background-color: #121213;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-container .grid-item-2:hover .overlay2{
+    height: 100%;
+}
+
+.grid-container .grid-item-2 .text-2{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container .grid-item-2:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container .grid-item-3{
+    background-image: url('https://www.carscoops.com/wp-content/uploads/2020/02/Toyota-Supra-Widebody-.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid grey;
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 50vh;
+}
+
+
+.grid-container .grid-item-3 .overlay-3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    background-color: #121213;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-container .grid-item-3:hover .overlay-3{
+    height: 100%;
+}
+
+.grid-container .grid-item-3 .text-3{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container .grid-item-3:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container .grid-item-4{
+    background-image: url('https://th.bing.com/th/id/R.5f299a30f61857be4aba3d14cdb7f53f?rik=kM6qgn%2bqQ0yb%2bg&riu=http%3a%2f%2fcdn.bmwblog.com%2fwp-content%2fuploads%2f2015%2f04%2fRolls-Royce-Cullinan-suv-image-02.jpg&ehk=%2bXNVD6bIul125g9HhoCKq12qMIyjwhZVFfYc5wR2ig0%3d&risl=&pid=ImgRaw&r=0');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid grey;
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 50vh;
+}
+
+
+.grid-container .grid-item-4 .overlay4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    background-color: #121213;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-container .grid-item-4:hover .overlay4{
+    height: 100%;
+}
+
+.grid-container .grid-item-4 .text-4{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container .grid-item-4:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+
+.grid-container .grid-item-5{
+    background-image: url('https://th.bing.com/th/id/R.8617a8a63fc02db9b90c1c4a32747883?rik=CTrclWqjQcpphQ&riu=http%3a%2f%2fcdn.carbuzz.com%2fgallery-images%2f1600%2f560000%2f400%2f560475.jpg&ehk=mlw7cl45CsPCQ4gRu4UFbt6HjbFxeYtzfbshGVTGsQE%3d&risl=&pid=ImgRaw&r=0');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid grey;
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 50vh;
+}
+
+
+.grid-container .grid-item-5 .overlay5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    background-color: #121213;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-container .grid-item-5:hover .overlay5{
+    height: 100%;
+}
+
+.grid-container .grid-item-5 .text-5{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container .grid-item-5:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container .grid-item-6{
+    background-image: url('https://th.bing.com/th/id/OIP.a8m-wuh9AtTb66TaRSs_4QHaFj?pid=ImgDet&w=800&h=600&rs=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid grey;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    height: 50vh;    
+}
+
+
+.grid-container .grid-item-6 .overlay6{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 75%;
+    background-color: #121213;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.grid-container .grid-item-6:hover .overlay6{
+    height: 100%;
+}
+
+.grid-container .grid-item-6 .text-6{
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.grid-container .grid-item-6:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.our-partners{
+    background-color: #000;
+    display: flex;
+    width:auto;
+    height:auto;
+    margin-top: 50px;
+    margin-left: 30px;
+    position:absolute;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.our-partners h1 a:hover{
+    scale: 1.01;
+    color: orange;
+    border-bottom: 1px solid red;
+    background-color: #100c08;
+}
+
+.our-partners a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 80px;
+    border-bottom: 1px solid #fff;
+    width: 300px;
+    color:#fff;
+    font-size: 3rem;
+    line-height: 3;
+    margin-top: 0px;
+    position: absolute;
+    font-family: 'acme', sans-serif;
+    /* text-decoration: underline; */
+
+}
+
+.grid-container-2{
+    display: grid;
+    grid-template-columns: repeat(7,minmax(0,1fr));
+    background-color: #100c08;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+
+.grid-container-2 .grid-item-1{
+    background-image: url('https://i.pinimg.com/originals/9a/fd/ed/9afded4adf3d90be93854870ccd3f352.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between; 
+    height: 150px;
+    width: 150px;
+}
+
+.grid-container-2 .grid-item-1:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container-2 .grid-item-2{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAkdYn-qt_2nhur7llLkO18Lls35M60KcMEg&usqp=CAU');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between;
+    height: 150px;
+    width: 150px;    
+}
+
+.grid-container-2 .grid-item-2:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container-2 .grid-item-3{
+    background-image: url('https://www.focus2move.com/wp-content/uploads/2014/12/Bmw-Logo-Wallpaper-26.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between;
+    height: 150px;
+    width: 150px;  
+}
+
+.grid-container-2 .grid-item-3:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container-2 .grid-item-4{
+    background-image: url('https://images.pexels.com/photos/10176569/pexels-photo-10176569.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between;
+    height: 150px;
+    width: 150px;    
+}
+
+.grid-container-2 .grid-item-4:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container-2 .grid-item-5{
+    background-image: url('https://etimg.etb2bimg.com/photo/93008748.cms');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between;
+    height: 150px;
+    width: 150px;    
+    
+}
+
+.grid-container-2 .grid-item-5:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container-2 .grid-item-6{
+    background-image: url('https://images.unsplash.com/photo-1576020111856-ac48d70c5a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZmVycmFyaSUyMGxvZ298ZW58MHx8MHx8fDA%3D&w=1000&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between; 
+    height: 150px;
+    width: 150px;
+}
+
+.grid-container-2 .grid-item-6:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+}
+
+.grid-container-2 .grid-item-7{
+    background-image: url('https://cdn.wallpapersafari.com/33/27/HyP8pK.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid silver;
+    opacity: 75%;
+    display: flex;
+    position: relative;
+    border-radius: 100%;
+    justify-content: space-between; 
+    height: 150px;
+    width: 150px;
+}
+
+.grid-container-2 .grid-item-7:hover{
+    box-shadow: 0 0 5rem rgba(255,255,255,0.5);
+    scale: 1.05;
+    opacity: 100%;
+}
+
+.para{
+    height: 180px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    color: #fff;
+
+}
+
+.discover {    
+    display: flex;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-color: #100c08;    
+}
+
+.discover h1:hover{
+    scale: 1.01;
+    color: orange;
+    border-bottom: 1px solid red;
+    /* background-color: rgba(0,0,0,0.2); */
+    /* transform: translateX(15px); */
+}
+
+.discover h1{
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid white;
+    align-items: center;
+    padding: 0px;
+    height: 80px;
+    width: 350px;
+    color: #fff;
+    font-size: 3rem;
+    z-index: 100;
+    line-height: 3;
+    margin-top: 0px;
+    position: relative;
+    font-family: 'acme', sans-serif;
+    /* text-decoration: underline; */
+
+}
+
+/* .bottom-bar{
+    background-color: #100c08;
+    display: flex;
+    flex-direction: row;
+    padding-top: 200px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    align-content: center;
+} */
+
+.info .grid-2{
+    
+}
+
+.info .grid-2 .grid-content-1{
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/10-lamborghini-huracan-performante-print-itzkirb-photography.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+    height: 100vh;
+    background-color: #100c08;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.info .grid-2 .grid-content-1 .item-1{
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.1);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.5) );
+}
+.info .grid-2 .grid-content-1 .item-2{
+    width: 70%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1) , rgba(0,0,0,1));
+    justify-content: end;
+    align-items: end;
+    
+}
+
+.info .grid-2 .grid-content-1 .item-2 h1{
+    padding-top: 80vh;
+    color: #fff;
+}
+
+.info .grid-2 .grid-content-2{
+    background-image: url('https://i.pinimg.com/originals/9f/81/cf/9f81cff2a4a18a087daa9906ff989b04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+    height: 100vh;
+    background-color: #100c08;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    
+}
+
+.info .grid-2 .grid-content-2 .item-1{
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(to left, rgba(0,0,0,0.1) , rgba(0,0,0,1));
+    justify-content: end;
+    align-items: end;
+}
+.info .grid-2 .grid-content-2 .item-2{
+    width: 30%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.1); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0.5) );
+    
+}
+
+.info .grid-2 .grid-content-2 .item-1 h1{
+    padding-top: 80vh;
+    color: #fff;
+}
+
+.info .grid-2 .grid-content-3{
+    width: 100%;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,1);
+}
+
+.info .grid-2 .grid-content-3 .item-1 h1{
+    display: flex;
+    height: 50vh;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.info .grid-2 .grid-content-4{
+    background-image: url('https://cdn.motor1.com/images/mgl/7ZPMMP/s3/ghost.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+    height: 100vh;
+    background-color: #100c08;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.info .grid-2 .grid-content-4 .item-1{
+    width: 70%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to left, rgba(0,0,0,0.1) , rgba(0,0,0,1));
+}
+
+.info .grid-2 .grid-content-4 .item-2{
+    width: 30%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.1);
+    background-image: linear-gradient(to left, rgba(0,0,0,0.1), rgba(0,0,0,0.5) );
+    justify-content: end;
+    align-items: end;
+    
+}
+
+.info .grid-2 .grid-content-4 .item-1 h1{
+    padding-top: 80vh;
+    color: #fff;
+}
+
+
+.info .grid-2 .grid-content-5{
+    background-image: url('https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/10-lamborghini-huracan-performante-print-itzkirb-photography.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+    height: 100vh;
+    background-color: #100c08;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+}
+
+.info .grid-2 .grid-content-5 .item-1{
+    width: 30%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.1);
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0.5) );
+}
+.info .grid-2 .grid-content-5 .item-2{
+    width: 70%;
+    height:100vh;
+    background-color: rgba(0,0,0,0.5); /* For browsers that do not support gradients */
+    background-image: linear-gradient(to right, rgba(0,0,0,0.1) , rgba(0,0,0,1));
+    justify-content: end;
+    align-items: end;
+    
+}
+
+.info .grid-2 .grid-content-5 .item-2 h1{
+    padding-top: 10vh;
+    color: #fff;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 18vh;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    background-color: #000;  
+    
+}
+
+.head h2:hover{
+    scale: 1.01;
+    color: orange;
+    border-bottom: 1px solid red;
+    /* background-color: rgba(0,0,0,0.2); */
+    /* transform: translateX(15px); */
+}
+
+.head h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    padding: 0px;
+    height: 80px;
+    width: 600px;
+    color: #fff;
+    font-size: 3rem;
+    z-index: 100;
+    line-height: 3;
+    margin-top: 0px;
+    position: relative;
+    font-family: 'acme', sans-serif;
+    /* text-decoration: underline; */
+}
+
+.head p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    height: 80px;
+    width: 200px;
+    color: #bfa37c;
+    z-index: 100;
+    margin-top: 0px;
+    position: relative;
+    font-family: 'acme', sans-serif;
+}
+
+
+
+.options{
+    padding-top: 70px;
+    padding-bottom: 20px;
+    padding-left: 150px;
+    padding-right: 100px;
+    width: 100%;
+    align-content: center;
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    height: 109vh;    
+}
+
+.options .content {
+    background-color: #000;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    
+}
+
+.options .content .content-1{
+    background-color: #000;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height:20vh;
+}
+
+.options .content .content-1 .title{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 200px;
+}
+
+.options .content .content-1 .title .heading{
+
+}
+
+.options .content .content-1 .title .heading h2{
+    color: #fff;
+}
+
+.options .content .content-1 .title .price{
+    align-content: baseline;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+
+}
+
+.options .content .content-1 .title .price .price-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.options .content .content-1 .title .price .price-inner{
+    display: flex;
+    position: relative;
+}
+
+.options .content .content-1 .title .price .price-inner .price-symbol{
+    display: flex;
+    align-items: flex-start;
+    justify-content: first baseline;
+    color: #bfa37c;
+    font-size: 25px;
+}
+
+.options .content .content-1 .title .price .price-inner .price-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    font-size: 30px;
+    color: #bfa37c;
+}
+
+.options .content .content-1 .features{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 550px;
+}
+
+.options .content .content-1 .features li{
+    color: #fff;
+    padding: 5px;
+}
+
+.options .content-1 .buy{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-left: 700px; */
+    margin-top: 30px;
+    margin-left: 800px;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+
+
+.options .content .content-2{
+    background-color: #000;
+    margin-top: 25vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height:20vh;
+}
+
+.options .content .content-2 .title{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 200px;
+}
+
+.options .content .content-2 .title .heading{
+
+}
+
+.options .content .content-2 .title .heading h2{
+    color: #fff;
+}
+
+.options .content .content-2 .title .price{
+    align-content: baseline;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+
+}
+
+.options .content .content-2 .title .price .price-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.options .content .content-2 .title .price .price-inner{
+    display: flex;
+    position: relative;
+}
+
+.options .content .content-2 .title .price .price-inner .price-symbol{
+    display: flex;
+    align-items: flex-start;
+    justify-content: first baseline;
+    color: #bfa37c;
+    font-size: 25px;
+}
+
+.options .content .content-2 .title .price .price-inner .price-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    font-size: 30px;
+    color: #bfa37c;
+}
+
+.options .content .content-2 .features{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 550px;
+}
+
+.options .content .content-2 .features li{
+    color: #fff;
+    padding: 5px;
+}
+
+.options .content-2 .buy{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-left: 700px; */
+    margin-top: 30px;
+    margin-left: 800px;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+
+
+.options .content .content-3{
+    background-color: #000;
+    margin-top: 50vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height:20vh;
+}
+
+.options .content .content-3 .title{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 200px;
+}
+
+.options .content .content-3 .title .heading{
+
+}
+
+.options .content .content-3 .title .heading h2{
+    color: #fff;
+}
+
+.options .content .content-3 .title .price{
+    align-content: baseline;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+
+}
+
+.options .content .content-3 .title .price .price-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.options .content .content-3 .title .price .price-inner{
+    display: flex;
+    position: relative;
+}
+
+.options .content .content-3 .title .price .price-inner .price-symbol{
+    display: flex;
+    align-items: flex-start;
+    justify-content: first baseline;
+    color: #bfa37c;
+    font-size: 25px;
+}
+
+.options .content .content-3 .title .price .price-inner .price-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    font-size: 30px;
+    color: #bfa37c;
+}
+
+.options .content .content-3 .features{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 550px;
+}
+
+.options .content .content-3 .features li{
+    color: #fff;
+    padding: 5px;
+}
+
+.options .content-3 .buy{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-left: 700px; */
+    margin-top: 30px;
+    margin-left: 800px;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+
+
+.options .content .content-4{
+    background-color: #000;
+    margin-top: 75vh;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid silver;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height:20vh;
+}
+
+.options .content .content-4 .title{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    position: absolute;
+    padding-top: 0px;
+    padding-left: 200px;
+}
+
+.options .content .content-4 .title .heading{
+
+}
+
+.options .content .content-4 .title .heading h2{
+    color: #fff;
+}
+
+.options .content .content-4 .title .price{
+    align-content: baseline;
+    height: 60px;
+    width: 150px;
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+
+}
+
+.options .content .content-4 .title .price .price-label{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10px;
+}
+
+.options .content .content-4 .title .price .price-inner{
+    display: flex;
+    position: relative;
+}
+
+.options .content .content-4 .title .price .price-inner .price-symbol{
+    display: flex;
+    align-items: flex-start;
+    justify-content: first baseline;
+    color: #bfa37c;
+    font-size: 25px;
+}
+
+.options .content .content-4 .title .price .price-inner .price-value{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0px;
+    font-size: 30px;
+    color: #bfa37c;
+}
+
+.options .content .content-4 .features{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-left: 550px;
+}
+
+.options .content .content-4 .features li{
+    color: #fff;
+    padding: 5px;
+}
+
+.options .content-4 .buy{
+    display: flex;
+    position: relative;
+    color: #fff;
+    font-size: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /* padding-left: 700px; */
+    margin-top: 30px;
+    margin-left: 800px;
+    align-items: center;
+    height: 40px;
+    width: auto;
+    justify-content: center;
+    border: 1px solid #fff;
+}
+
+.pic{
+    background-image: url('https://cdn.motor1.com/images/mgl/9mBMKg/s3/lamborghini-revuelto---foto---2023.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between; 
+    height: 100vh; 
+}
+
+.pic .catch{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    font-size: 35px;
+    color:#fff;
+    margin-top: 650px;
+    margin-left: 800px;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pic .catch h3{
+    border-bottom: 1px solid white;
+}
+
+.add-con{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    background-color: #000;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    align-content: center;
+    column-gap: 40px;
+    row-gap: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.add-con .add{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: space-between; 
+    height: 100px;
+    width: 240px;
+}
+
+.add-con .add .location{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-con .add .location .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 40px;
+    height: 100px;
+    font-size: 3em;
+    color: #fff;
+}
+
+.add-con .add .location .loc{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 19px;
+    padding-right: 19px;
+    color: #bfa37c;
+}
+
+.add-con .contact{
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 100px;
+    width: 238px;
+}
+
+.add-con .contact .con-val{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-con .contact .con-val .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 40px;
+    height: 100px;
+    font-size: 3em;
+    color: #fff;
+}
+
+.add-con .contact .con-val .con{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: #bfa37c;
+}
+
+.add-con .contact .con-val .con .num1{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.add-con .contact .con-val .con .num2{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.add-con .timing{
+    display: flex;
+    position: relative;
+    justify-content: space-between; 
+    height: 100px;
+    width: 240px;
+
+}
+
+.add-con .timing .time{
+    width: 240px;
+    display: flex;
+    flex-direction: row;
+}
+
+.add-con .timing .time .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    width: 40px;
+    height: 100px;
+    font-size: 3em;
+    color: #fff;
+}
+
+.add-con .timing .time .hol{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #bfa37c;
+}
+
+
+.bottom-container {
+    display: flex;
+    padding-top: 100vh;
+    position: absolute;
+    height: 30vh;
+    padding-left: 10px;
+    padding-top: 50px;
+    /* flex-direction: row; */
+    width: 100%;
+    background-color: rgb(12,16,31);
+    background-image: linear-gradient(rgb(0,0,0), rgb(12,16,31));    
+}
+    
+.bottom-container .title{
+    display: flex;
+    position: absolute;
+}
+
+.bottom-container .title .copyright{
+    display: flex;
+    color: #fff;
+    /* padding-top: 20vh; */
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    border-top: 1px solid #fff;
+    height: 40px;
+    width: 250px;
+    z-index: 100;
+    margin-top: 18vh;
+    font-family: 'acme', sans-serif;
+    position: absolute;
+}
+
+.bottom-container .quick-links{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* border-top: 1px solid #fff; */
+    padding-left: 700px;
+    height: 150px;
+    width: 700px;
+    font-family: 'acme', sans-serif;
+}
+
+.bottom-container .quick-links .title{
+    display: flex;
+    position: absolute;
+}
+
+.bottom-container .quick-links .title h3{
+    display: flex;
+    position: absolute;
+    width: 140px;
+    color: #fff;
+}
+
+.bottom-container .quick-links .contents{
+    display: flex;
+    position: absolute;
+    width: 140px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.bottom-container .quick-links .contents li{
+    padding-bottom: 10px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-content: first baseline;
+}
+
+.bottom-container .services{
+    display: flex;
+    flex-direction: column;
+    position: absolute;;
+    /* border-top: 1px solid #fff; */
+    padding-left: 1100px;
+    height: 150px;
+    font-family: 'acme', sans-serif;
+}
+
+.bottom-container .services .title{
+    display: flex;
+    position: absolute;
+}
+
+.bottom-container .services .title h3{
+    display: flex;
+    position: absolute;
+    width: 140px;
+    color: #fff;
+}
+
+.bottom-container .services .contents{
+    display: flex;
+    position: absolute;
+    width: 200px;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.bottom-container .services .contents li{
+    padding-bottom: 10px;
+}
+
+
+.para-2 h3 a{
+    margin-top: 300px;
+    margin-left: 50px;
+    height: 60px;
+    width: 400px;
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    align-items: end;
+    color: #fff;
+}
+
+.para-2 h3 a:hover {
+    color: orange;
+    scale: 1.05;
+}
+
+
+
+
+
+
+
+
